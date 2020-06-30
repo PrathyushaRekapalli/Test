@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>average cal</title>   
+<script>
+function calculateByT()
+{ 
+var m1=document.getElementById("marks1").value
+var m2=document.getElementById("marks2").value;
+var total=Number(m1)+Number(m2);
+document.write("Total="+total);
+}
+function calculateByA()
+{ 
+var m1=document.getElementById("marks1").value
+var m2=document.getElementById("marks2").value;
+var A=(Number(m1)+Number(m2))/2;
+document.write("Average"+A);
+}
+</script>
+  </head>
+
+  <body>
+    <h1>Marks Calculator</h1>
+
+  <p>
+
+    <form name="savingdata">
+    <table border="1">
+
+    <tr>
+    <td>name</td> <td>prathyusha</td>
+    </tr>
+
+    <tr>
+    <td>subject1</td> 
+    <td><input type="text" id="marks1" /></td>
+    </tr>
+	 <tr>
+    <td>subject2</td> 
+    <td><input type="text" id="marks2"  /></td>
+    </tr>
+
+    </table>
+    <br>
+    <input type="button" onClick="calculateByT()" Value="CalculateTotal" />
+	 <input type="button" onClick="calculateByA()" Value="CalculateAvg" />
+    </form>
+    <br>
+  </p>
+</body>
+</html>

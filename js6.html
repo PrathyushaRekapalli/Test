@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Multiplication</title>   
+<script>
+function multiply()
+{
+var mul;
+mul=Number(document.getElementById("num1").value)*Number(document.getElementById("num2").value);
+document.write("Multiplication Result="+mul);
+}
+
+
+</script>
+<body>
+Number1:
+<input type="text" id="num1" >
+<br><br>
+Number2:
+<input type="text" id="num2">
+<br> <br><input type="button" onClick="multiply()" Value="Multiplication" />
+
+</body>

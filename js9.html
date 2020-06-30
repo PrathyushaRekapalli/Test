@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function clickme()
+{
+
+document.getElementById("demo").innerHTML = Math.pow(Math.abs(document.getElementById("num1").value),Math.abs(document.getElementById("num2").value));
+document.getElementById("demo1").innerHTML = Math.sqrt(Math.abs(document.getElementById("num1").value));
+document.getElementById("demo2").innerHTML = Math.sqrt(Math.abs(document.getElementById("num2").value));
+document.getElementById("demo3").innerHTML = Math.random();
+document.getElementById("demo4").innerHTML = Math.floor(Math.random());
+document.getElementById("demo5").innerHTML = Math.floor(Math.random());
+document.getElementById("demo6").innerHTML = Math.floor(Math.random());
+document.getElementById("demo7").innerHTML = Math.cos(0 * Math.PI / 180);  
+}
+</script>
+
+</head>
+</html>
+<body>
+Number1:
+<input type="text" id="num1" /><br><br>
+Number2:
+<input type="text" id="num2" /><br><br>
+<input type="button" OnClick="clickme()" value="ClickME" /><br><br>
+power:<p id="demo"></p>
+Square root of num1:<p id="demo1">
+</p>
+Square root of num2:<p id="demo2">
+</p>
+Random:
+<p id="demo3"></p>
+Floor of random number:
+<p id="demo4"></p>
+Ceil it:
+<p id="demo5"></p>
+Round it:
+<p id="demo6"></p>
+Trigonometric:
+<p id="demo7"></p>
+
+
+</body>
+</html>
