@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function myfunction()
+{
+var n = Number(document.getElementById("number").value );
+
+if(n>=10 && n<=100)
+{
+
+document.getElementById("demo").innerHTML= "This is valid number ";
+   
+}
+else
+{
+document.getElementById("demo").innerHTML="This is not valid number";
+}
+}
+
+</script>
+</head>
+<body>
+<h3>This is webpage prints valid number from 10-100<h3><br>
+Numbers:
+<input type="text" id="number" name="number" value="60"/>
+<input type="button" Onclick="myfunction()" value="CheckMe"/>
+<p id="demo">
+</body>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to display the 4th 7th and 11th array element, after a string split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser."; 
+   var arr = str.split(" ");
+  document.getElementById("demo").innerHTML = arr[3]+" "+arr[6]+" "+arr[10];
+   //document.getElementById("demo").innerHTML = arr[6];
+	//document.getElementById("demo").innerHTML = arr[10];
+   
+}
+</script>
+
+</body>
+</html>
+
