@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	<script> 
+		$(document).ready(function() { 
+			$("button").dblclick(function() { 
+				$("#gfg").toggle(); 
+			});
+			$("h1").click(function(){
+    $( this ).toggleClass("divClass2");
+  });
+		}); 
+	</script> 
+	<style> 
+		#gfg {
+			color: green; 
+			border: 5px solid black; 
+			width: 200px; 
+			text-align: center; 
+		} 
+		#color{
+			color:blue;
+			border: 5px solid yellow;
+			width:200px;
+			text-align:center;
+		}
+		.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:yellow;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:grey;
+    border:solid 1px;
+}
+	</style> 
+	</style> 
+</head> 
+
+<center><body> 
+
+	<h1 class="divClass1">Click to view the changes</h1>	<div id="gfg">Button</div> 
+
+		<button>Click to hide() and show() the above div</button> 
+	
+</body> </center>
+
+</html> 
+
